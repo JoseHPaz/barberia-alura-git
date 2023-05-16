@@ -1,0 +1,54 @@
+ <meta charset="UTF-8">
+
+<h1> PROGRAMA  CALCULAR IMC</h1>
+<br>
+
+<script>
+//esta funcion es para dar saltos dobles de linea
+	function slinea() 
+	{
+		document.write("<br><br>");
+	}
+//esta funcion es para imprimir 
+	function print (frase)
+	{
+		document.write(frase);
+		slinea();
+	}
+//esta funcion calcula el Indice de masa corporal
+	function imc (peso, altura)
+	{
+		return ((peso/(altura*altura)));
+	} 
+
+	alert("Este codigo calcula el Indice de masa corporal.");
+
+	nombre= prompt("Cual es tu  nombre?");
+	peso= prompt("Informe su peso en kg:");
+	altura= prompt("Informe su altura en cm:")/100;
+
+	imcc= imc(peso, altura);
+
+	print(nombre + ", tu imc es : " + imcc);
+
+	if(imcc<18.5)
+	{
+		print("Estas abajo de lo recomendado de peso")
+	}
+
+
+	if(imcc>18.5 && imcc<25)
+	{
+		print("Estas bien de peso")
+	}
+
+	if(imcc>25 && imcc<30)
+	{
+		print("Tienes sobrepeso")
+	}
+
+	if(imcc>30 )
+	{
+		print("Tienes obesidad")
+	}
+</script>

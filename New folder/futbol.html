@@ -1,0 +1,41 @@
+ <meta charset="UTF-8">
+
+<h1> PROGRAMA  CALCULAR LOS UNTOS DE UN EQUIPO DE FUTBOL</h1>
+<br>
+
+<script>
+//esta funcion es para dar saltos dobles de linea
+	function slinea() 
+	{
+		document.write("<br><br>");
+	}
+//esta funcion es para imprimir 
+	function print (frase)
+	{
+		document.write(frase);
+		slinea();
+	}
+
+	var vict = parseInt(prompt("Cuantas victorias tuvo el equipo"));
+	var empa = parseInt(prompt("Cuantos empates tuvo el equipo"));
+	var total = vict * 3 + empa;
+
+print ("El total de ountos del equipo es: " + total);
+
+if (total > 28)
+{
+	print("El equipo esta mejor que el año pasado ");
+}
+
+if (total < 28)
+{
+	print("El equipo esta peor que el año pasado ");
+}
+
+if (total==28)
+{
+	print("El equipo esta igual que el año pasado ");
+}
+
+
+</script>

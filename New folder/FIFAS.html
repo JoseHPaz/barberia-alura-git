@@ -1,0 +1,29 @@
+ <meta charset="UTF-8">
+
+<h1> PROGRAMA AÑOS DE LOS MUNDIEALES DE LA FIFA</h1>
+<br>
+
+<script>
+//esta funcion es para dar saltos dobles de linea
+	function slinea() 
+	{
+		document.write("<br><br>");
+	}
+//esta funcion es para imprimir 
+	function print (frase)
+	{
+		document.write(frase);
+		slinea();
+	}
+
+
+	var year = 1930;
+	var limit = parseInt(prompt("Ingrese el año limite a calcular"));
+
+
+	while(year <= limit)
+	{
+		print("Hubo un mundial de la FIFA en el año " + year);
+		year = year + 4;
+	}
+</script>

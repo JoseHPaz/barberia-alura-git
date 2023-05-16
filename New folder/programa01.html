@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <canvas width="600" height="400">
+
+   </canvas>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var screen= document.querySelector("canvas");
+        
+        // // screen.getContext("2d") nos sirve para pasar 
+        // // lo que se encuentra en la variable screen
+        var pincel= screen.getContext("2d");
+
+        // // fillStyle sirve para darle una propiedad a nuestro pincel
+        // pincel.fillStyle = "lightgray";
+        
+
+        // // fillRect que nos rellena la pantalla en las 
+        // // coordenadas seleccionadas con el formato:
+        // // (x inicial, y inicial, x tamaño, y tamaño)
+        // pincel.fillRect(0,0,600,400);
+
+        // pincel.fillStyle = "green";
+        // pincel.fillRect(0,0,200,400);
+
+        // pincel.fillStyle = "red";
+        // pincel.fillRect(400,0,600,400);
+
+        // pincel.fillStyle = "brown";
+        // pincel.beginPath();
+        // pincel.arc(300,200,50,0,2*3.14);
+        // pincel.fill();
+
+        // //  dibujar un triangulo en el fondo
+        // pincel.moveTo(300,200);
+        // pincel.lineTo(200,400)
+        // pincel.lineTo(400,400)
+        // pincel.fill();
+
+        //BOCCHI
+        pincel.fillStyle = "pink";
+        pincel.fillRect(100,100,200,200);
+        pincel.moveTo(100,120);
+        pincel.lineTo(0,100)
+        pincel.lineTo(60,90)
+        pincel.lineTo(100,120)
+        pincel.fill();
+
+        pincel.fillStyle = "blue";
+        pincel.fillRect(90,80,40,40);
+
+        pincel.fillStyle = "yellow";
+        pincel.fillRect(60,120,40,40);
+
+        // // Nijika
+        pincel.fillStyle = "yellow";
+        pincel.fillRect(300,100,200,200);
+        
+        pincel.moveTo(400,100);
+        pincel.lineTo(380,0);
+        pincel.lineTo(350,50);
+        pincel.lineTo(400,100);
+        pincel.fill();
+    </script>
+</body>
+</html>
